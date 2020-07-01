@@ -1,4 +1,12 @@
 
+
+# EVE the chatbot
+
+This file consists of Eve, a personalized, interactive, and informative chatbot made on Dialogflow. 
+
+This chatbot serves the main purpose of providing the user with information relating to their health and diet, depending on the questions asked by the user.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
