@@ -1,0 +1,215 @@
+body {
+  font-family: "Open Sans";
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+h1 {
+  font-size: 1em;
+  line-height: 0.9em;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-weight: 500;
+}
+
+.img {
+  /* margin-left: 2.5em; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  border-radius: 50%;
+  background-color: #51c1aa;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+.subtitle-bold {
+  font-weight: 900 !important;
+}
+
+.subtitle-big {
+  font-weight: 900;
+  font-size: x-large;
+  margin: 1em 0;
+}
+
+ol {
+  counter-reset: item;
+}
+ol li {
+  display: block;
+}
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: red;
+  font-weight: bold;
+}
+
+.li-text-large {
+  font-size: 1.5em !important;
+}
+
+.cent {
+  text-align: center;
+}
+
+/* navbar */
+
+.nav {
+  background-color: #0079b1;
+}
+.head {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.nav-new:hover {
+  color: #0359bb;
+}
+
+.nav-new {
+  color: white;
+}
+
+/* HopeVid */
+.cont {
+  padding: 0%;
+  margin: auto;
+}
+
+/* News */
+
+.who {
+  font-size: 2em;
+  line-height: 0.9em;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.read {
+  color: #0276d4;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.is-hope {
+  background-color: #51c1aa;
+  color: #fff;
+}
+
+.is-hope:hover {
+  background-color: #0276d4;
+  color: #fff;
+}
+
+/* ---------VIDEO CHAT------------- */
+
+
+
+#buttons-container {
+  position: absolute;
+  z-index: 2;  
+  width: 100vw;
+}
+
+#full-screen-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#lower-video-bar {
+  height: 20vh;
+}
+
+#local-stream-container { 
+  position: relative; 
+  display: inline-block;
+}
+
+.remote-stream-container { 
+  display: inline-block;
+}
+
+#remote-streams {
+  height: 100%;
+}
+
+#local-video {
+  position: absolute;
+  z-index: 1;
+  height: 20vh;
+  max-width: 100%;
+}
+
+.remote-video {
+  position: absolute;
+  z-index: 1;
+  height: 100% !important;
+  width: 80%;
+  max-width: 500px;
+}
+
+#mute-overlay {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  color: #d9d9d9;
+  font-size: 2em;
+  padding: 0 0 3px 3px;
+  display: none;
+} 
+
+.mute-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  color: #d9d9d9;
+  font-size: 1.5em;
+  padding: 2px 0 0 2px;
+  display: none;
+}
+
+#no-local-video, .no-video-overlay {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 40%;
+  color: #cccccc;
+  font-size: 2.5em;
+  margin: 0 auto;
+  display: none;
+}
+
+.no-video-overlay {
+  width: 80%;
+}
+
+#screen-share-btn-container {
+  z-index: 99;
+}
